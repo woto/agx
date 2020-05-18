@@ -2,7 +2,7 @@
 
 require 'forwardable'
 
-module Navag
+module Agx
   class Command
     extend Forwardable
 

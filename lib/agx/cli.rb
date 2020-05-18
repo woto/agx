@@ -2,7 +2,7 @@
 
 require 'thor'
 
-module Navag
+module Agx
   # Handle the application command line parsing
   # and the dispatch to various command objects
   #
@@ -11,10 +11,10 @@ module Navag
     # Error raised by this runner
     Error = Class.new(StandardError)
 
-    desc 'version', 'navag version'
+    desc 'version', 'agx version'
     def version
       require_relative 'version'
-      puts "v#{Navag::VERSION}"
+      puts "v#{Agx::VERSION}"
     end
     map %w(--version -v) => :version
 
@@ -26,7 +26,7 @@ module Navag
         invoke :help, ['config']
       else
         require_relative 'commands/config'
-        Navag::Commands::Config.new(options).execute
+        Agx::Commands::Config.new(options).execute
       end
     end
   end

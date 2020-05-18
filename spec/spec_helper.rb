@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "navag"
+require "agx"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

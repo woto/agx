@@ -9,9 +9,9 @@ require 'active_support'
 require 'active_support/core_ext/string/filters'
 require 'ostruct'
 
-module Navag
+module Agx
   module Commands
-    class Config < Navag::Command
+    class Config < Agx::Command
       def initialize(options)
         @options = options
       end

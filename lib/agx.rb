@@ -1,6 +1,6 @@
-require "navag/version"
+require "agx/version"
 
-module Navag
+module Agx
   class Error < StandardError; end
   # Your code goes here...
 end

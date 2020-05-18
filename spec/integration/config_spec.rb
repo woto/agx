@@ -1,9 +1,9 @@
-RSpec.describe "`navag config` command", type: :cli do
-  it "executes `navag help config` command successfully" do
-    output = `navag help config`
+RSpec.describe "`agx config` command", type: :cli do
+  it "executes `agx help config` command successfully" do
+    output = `agx help config`
     expected_output = <<-OUT
 Usage:
-  navag config
+  agx config
 
 Options:
   -h, [--help], [--no-help]  # Display usage information

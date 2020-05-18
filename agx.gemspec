@@ -1,9 +1,9 @@
-require_relative 'lib/navag/version'
+require_relative 'lib/agx/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "navag"
+  spec.name          = "agx"
   spec.license       = "MIT"
-  spec.version       = Navag::VERSION
+  spec.version       = Agx::VERSION
   spec.authors       = ["Ruslan Kornev"]
   spec.email         = ["oganer@gmail.com"]
 

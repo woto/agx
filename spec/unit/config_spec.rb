@@ -1,10 +1,10 @@
-require 'navag/commands/config'
+require 'agx/commands/config'
 
-RSpec.describe Navag::Commands::Config do
+RSpec.describe Agx::Commands::Config do
   it "executes `config` command successfully" do
     output = StringIO.new
     options = {}
-    command = Navag::Commands::Config.new(options)
+    command = Agx::Commands::Config.new(options)
 
     command.execute(output: output)
 
