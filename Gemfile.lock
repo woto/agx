@@ -3,9 +3,11 @@ PATH
   specs:
     agx (0.1.0)
       activesupport
+      tty-command
       tty-cursor
       tty-editor
       tty-prompt
+      tty-reader
       tty-tree
 
 GEM
@@ -43,6 +45,8 @@ GEM
     rspec-support (3.9.3)
     thread_safe (0.3.6)
     tty-color (0.5.1)
+    tty-command (0.9.0)
+      pastel (~> 0.7.0)
     tty-cursor (0.7.1)
     tty-editor (0.5.1)
       tty-prompt (~> 0.19)

@@ -18,15 +18,15 @@ module Agx
     end
     map %w(--version -v) => :version
 
-    desc 'config', 'Command description...'
+    desc 'search', 'Command description...'
     method_option :help, aliases: '-h', type: :boolean,
                          desc: 'Display usage information'
-    def config(*)
+    def search(str)
       if options[:help]
-        invoke :help, ['config']
+        invoke :help, ['search']
       else
-        require_relative 'commands/config'
-        Agx::Commands::Config.new(options).execute
+        require_relative 'commands/search'
+        Agx::Commands::Search.new(str).execute
       end
     end
   end

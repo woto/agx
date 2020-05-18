@@ -1,10 +1,10 @@
-require 'agx/commands/config'
+require 'agx/commands/search'
 
-RSpec.describe Agx::Commands::Config do
-  it "executes `config` command successfully" do
+RSpec.describe Agx::Commands::Search do
+  it "executes `search` command successfully" do
     output = StringIO.new
     options = {}
-    command = Agx::Commands::Config.new(options)
+    command = Agx::Commands::Search.new(options)
 
     command.execute(output: output)
 

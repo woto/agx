@@ -1,9 +1,9 @@
-RSpec.describe "`agx config` command", type: :cli do
-  it "executes `agx help config` command successfully" do
-    output = `agx help config`
+RSpec.describe "`agx search` command", type: :cli do
+  it "executes `agx help search` command successfully" do
+    output = `agx help search`
     expected_output = <<-OUT
 Usage:
-  agx config
+  agx search
 
 Options:
   -h, [--help], [--no-help]  # Display usage information

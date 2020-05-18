@@ -11,9 +11,9 @@ require 'ostruct'
 
 module Agx
   module Commands
-    class Config < Agx::Command
-      def initialize(options)
-        @options = options
+    class Search < Agx::Command
+      def initialize(str)
+        @str = str
       end
 
       def execute(input: $stdin, output: $stdout)
@@ -48,11 +48,15 @@ module Agx
 
       private
 
+      def raw_command
+        "ag --ruby '#{@str}' --vimgrep"
+      end
+
       def tree
         return @tree if defined?(@tree)
 
         @tree = { '.' => {} }
-        File.open('result.txt').each_line do |line|
+        command(uuid: false).run(raw_command).each do |line|
           match = /(?<path>.+?):(?<line>.+?):(?<column>.+?):(?<text>.+)/.match(line)
           data = OpenStruct.new({
               line: match['line'],
