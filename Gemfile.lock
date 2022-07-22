@@ -62,7 +62,7 @@ GEM
     tty-screen (0.7.1)
     tty-tree (0.4.0)
     tty-which (0.4.2)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     wisper (2.0.1)
     zeitwerk (2.3.0)
